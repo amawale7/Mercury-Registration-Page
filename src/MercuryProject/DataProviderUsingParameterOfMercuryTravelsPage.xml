@@ -20,7 +20,7 @@
   <parameter name="postalCode" value="3333"/>
   <parameter name="cntry" value="92"/>
   <parameter name="userName" value="QQQQQ"/>
-  <parameter name="password" value="qqqqq"/>
+  <parameter name="passwordChanges1" value="qqqqq"/>
   
   
   <parameter name="firstName1" value="ZZZZZ"/>
