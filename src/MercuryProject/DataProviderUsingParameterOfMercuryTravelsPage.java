@@ -118,10 +118,10 @@ public class DataProviderUsingParameterOfMercuryTravelsPage
 	}
 
 	@Parameters({ "firstName1", "lastName1", "phoneNumber1" , "email1", "address11", 
-		"address21" , "city1" , "state1" , "postalCode1", "cntry1", "userName1", "password1"})
+		"address21" , "city1" , "state1" , "postalCode1", "cntry1", "userName1", "passwordChanges"})
 	@Test
 	public void f1(String firstName, String lastName, String phoneNumber, String email, String address1, 
-	String address2,String city, String state, String postalCode,String cntry, String userName, String password) 
+	String address2,String city, String state, String postalCode,String cntry, String userName, String passwordChanges) 
 	{
 		driver.findElement(By.xpath("//input[@name=\"firstName\"]")).sendKeys(firstName);
 		driver.findElement(By.xpath("//input[@name=\"lastName\"]")).sendKeys(lastName);
@@ -135,8 +135,8 @@ public class DataProviderUsingParameterOfMercuryTravelsPage
 		Select country=new Select(driver.findElement(By.xpath("//select[@name=\"country\"]")));
 		country.selectByValue(cntry);
 		driver.findElement(By.xpath("//input[@name=\"email\"]")).sendKeys(userName);
-		driver.findElement(By.xpath("//input[@name=\"password\"]")).sendKeys(password);
-		driver.findElement(By.xpath("//input[@name=\"confirmPassword\"]")).sendKeys(password);
+		driver.findElement(By.xpath("//input[@name=\"password\"]")).sendKeys(passwordChanges);
+		driver.findElement(By.xpath("//input[@name=\"confirmPassword\"]")).sendKeys(passwordChanges);
 		driver.findElement(By.xpath("//input[@name=\"register\"]")).click();
 	}
 
