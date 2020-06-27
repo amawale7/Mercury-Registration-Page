@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+
+<parameter name="browser" value="chrome"/>
+
+
+
+  <test  name="ChromeTest" >
+  <parameter name="url" value="http://www.newtours.demoaut.com/mercuryregister.php?osCsid=f35cc2b9963e72b0302b89a22eeb8b97"></parameter>
+  
+  <parameter name="firstName" value="QQQQQ"/>
+  <parameter name="lastName" value="qqqqq"/>
+  <parameter name="phoneNumber" value="1112222"/>
+  <parameter name="email" value="dddddd"/>
+  <parameter name="address1" value="pppppppppp"/>
+  <parameter name="address2" value="llllll"/>
+  <parameter name="city" value="ddddd"/>
+  <parameter name="state" value="mh"/>
+  <parameter name="postalCode" value="3333"/>
+  <parameter name="cntry" value="92"/>
+  <parameter name="userName" value="QQQQQ"/>
+  <parameter name="password" value="qqqqq"/>
+  
+  
+  <parameter name="firstName1" value="ZZZZZ"/>
+  <parameter name="lastName1" value="zzzzz"/>
+  <parameter name="phoneNumber1" value="1112222"/>
+  <parameter name="email1" value="dddddd"/>
+  <parameter name="address11" value="pppppppppp"/>
+  <parameter name="address21" value="llllll"/>
+  <parameter name="city1" value="ddddd"/>
+  <parameter name="state1" value="mh"/>
+  <parameter name="postalCode1" value="3334"/>
+  <parameter name="cntry1" value="93"/>
+  <parameter name="userName1" value="ZZZZZ"/>
+  <parameter name="password1" value="zzzzz"/>
+ 
+ 
+   <parameter name="path" value="E:\\SreenShotSelenium\\sc.png"></parameter>
+	
+    <classes>
+      <class name="DataProviderUsingParameter.DataProviderUsingParameterOfMercuryTravelsPage"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
